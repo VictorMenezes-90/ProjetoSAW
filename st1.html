@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="icon" type="image" href="" sizes="">
+
+        <style>
+
+            .MenuBar{
+                display: flex;
+                width: 100%;
+                height: 100px;
+            }
+
+            .LeftMenu{
+                display: flex;
+                flex-direction: row;
+                width: 25%;
+                /*border-color: antiquewhite;
+                border-style: solid;*/
+            }
+
+            .RightMenu{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 75%;
+                /*border: 5px;
+                border-style: solid;*/
+            }
+
+            .LeftMenuItem{
+                object-fit:cover;
+                width: 100%;
+                /*border-color: rgb(255, 0, 0);
+                border-style: none;*/
+            }
+
+            .RightMenuEven{
+                width: 33%;
+                text-align: center;
+                align-content: center;
+                background-color: rgba(186, 24, 27, 1);
+            }
+            
+            .RightMenuOdd{
+                width: 33%;
+                text-align: center;
+                align-content: center;
+                background-color: rgb(221, 25, 28);
+            }
+
+            a{
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+            }
+        </style>
+
+    </head>
+    
+    <body bgcolor="Black">
+        <!-- Menu -->
+    
+    <div class="MenuBar">
+    <div class="LeftMenu">
+        <img class="LeftMenuItem" src="/Images/ST1.png" sizes="1024x1024" style="border-bottom-left-radius: 25px; border-top-left-radius: 25px; border-style: none; border-color: aqua;">
+    </div>
+
+    <div class="RightMenu" id="MedioMenu" name="MedioMenu">
+            <div class="RightMenuOdd">
+                <a href="index.html">Página Incial</a>
+            </div>
+            <div class="RightMenuEven">
+                <a href=#Sintese>Síntese</a>
+            </div>
+            <div class="RightMenuOdd">
+                <a href=#Episodios>Episodios</a>
+            </div>
+            <div class="RightMenuEven">
+                <a href=#Avaliaçao>Crítica</a>
+            </div>
+            <div class="RightMenuOdd">
+                <a href=#TrilhaSonora>Trilha Sonora</a>
+            </div>
+            <div class="RightMenuEven">
+                <a href=#Curiosidades>Curiosidades</a>
+            </div>
+    </div>
+    </div>     
+    </body>
+</html>
