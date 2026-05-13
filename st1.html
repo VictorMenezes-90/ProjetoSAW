@@ -14,49 +14,58 @@
             
             .MenuBar{
                 display: flex;
+                flex-wrap: wrap;
                 width: 100%;
                 height: 100px;
             }
 
-            .LeftMenu{
+            .TopMenu{
                 display: flex;
                 flex-direction: row;
-                width: 25%;
+                
+                width: 100%;
+                background-color: rgb(0, 0, 0);
+                align-items: center;
                 /*border-color: antiquewhite;
                 border-style: solid;*/
             }
 
-            .RightMenu{
+            .BottomMenu{
                 display: flex;
                 flex-direction: row;
-                flex-wrap: wrap;
-                width: 75%;
+                flex-wrap: nowrap;
+                width: 100%;
                 /*border: 5px;
                 border-style: solid;*/
             }
 
-            .LeftMenuItem{
-                object-fit:cover;
-                width: 100%;
-                /*border-color: rgb(255, 0, 0);
-                border-style: none;*/
+            .TopMenuItem{
+                margin-left: 1%;
+                size: 50%;
+                
+                color: rgba(255, 255, 255, 0);
+                -webkit-text-stroke: 0.5px rgb(255, 0, 0);
+                font-family: 'Benguiat Bk BT', sans-serif;
+                font-weight: 700;
+                font-size: xx-large;
+                font-size-adjust: initial;
             }
 
-            .RightMenuEven{
-                width: 33%;
+            .BottomMenuEven{
+                flex:1 0;
                 text-align: center;
                 align-content: center;
-                background-color: rgba(186, 24, 27, 1);
+                background-color: rgba(50, 0, 0, 1);
             }
             
-            .RightMenuOdd{
-                width: 33%;
+            .BottomMenuOdd{
+                flex:1 0;
                 text-align: center;
                 align-content: center;
-                background-color: rgb(221, 25, 28);
+                background-color: rgba(100, 0, 0, 1);
             }
 
-            .RightMenuLinks{
+            .BottomMenuLinks{
                 text-decoration: none;
                 color: rgb(255, 255, 255);
                 font-family: 'Benguiat Bk BT', sans-serif;   
@@ -64,36 +73,50 @@
                 font-weight: bold;
             }
 
-            body {
-            background: rgb(0,0,0);
-
-            color: rgba(255, 255, 255, 0);
-            font-family: 'Benguiat Bk BT', sans-serif;   
-            -webkit-text-stroke: 1px rgba(255,0,0,1);                               
+            .TitleDiv{
+                width: 100%;
+                margin: auto;
             }
 
+            .ContentDiv{
+                width: 100%;
+            }
+            
             .Title{
             color: rgba(255, 255, 255, 0);
             font-family: 'Benguiat Bk BT', sans-serif;   
-            -webkit-text-stroke: 1px rgba(255,0,0,1);
+            -webkit-text-stroke: 0.5px rgba(255,0,0,1);
+            font-weight: 700;
             }
 
             .TitleWhite{
             color: rgba(255, 255, 255, 0);
             font-family: 'Benguiat Bk BT', sans-serif;   
-            -webkit-text-stroke: 1px rgb(255, 255, 255);
+            -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+            font-weight: 700;
             }
 
             .Text{
             color: rgb(255, 255, 255);
             font-family: 'Benguiat Bk BT', sans-serif;   
-            -webkit-text-stroke: 1px rgba(255,0,0,0);
+            -webkit-text-stroke: 0.5px rgba(255,0,0,0);
+            font-weight: 400;
             }
 
             .TextRed{
             color: rgba(255,0,0,1);
             font-family: 'Benguiat Bk BT', sans-serif;   
-            -webkit-text-stroke: 1px rgba(255,0,0,0);
+            -webkit-text-stroke: 0.5px rgba(255,0,0,0);
+            font-weight: 400;
+            }
+
+            body {
+            background: rgb(0,0,0);
+
+            color: rgba(255, 255, 255, 0);
+            font-family: 'Benguiat Bk BT', sans-serif;   
+            -webkit-text-stroke: 1px rgba(255,0,0,1); 
+            font-weight: 400;                              
             }
 
         </style>
@@ -102,32 +125,67 @@
     
     <body bgcolor="Black">
         <!-- Menu -->
-    
     <div class="MenuBar">
-    <div class="LeftMenu">
-        <img class="LeftMenuItem" src="Images/ST1.png" sizes="1024x1024" style="border-bottom-left-radius: 25px; border-top-left-radius: 25px; border-style: none; border-color: aqua;">
+    <div class="TopMenu" id="TopMenu" name="BottomMenu">
+        <div class="TopMenuItem">STRANGER THINGS</div>
     </div>
 
-    <div class="RightMenu" id="MedioMenu" name="MedioMenu">
-            <div class="RightMenuOdd">
-                <a class="RightMenuLinks" href="index.html">Página Incial</a>
+    <div class="BottomMenu" id="BottomMenu" name="BottomMenu">
+            <div class="BottomMenuOdd">
+                <a class="BottomMenuLinks" href="index.html">Página Incial</a>
             </div>
-            <div class="RightMenuEven">
-                <a class="RightMenuLinks" href=#Sintese>Síntese</a>
+            <div class="BottomMenuEven">
+                <a class="BottomMenuLinks" href=#Síntese>Síntese</a>
             </div>
-            <div class="RightMenuOdd">
-                <a class="RightMenuLinks" href=#Episodios>Episodios</a>
+            <div class="BottomMenuOdd">
+                <a class="BottomMenuLinks" href=#Episódios>Episodios</a>
             </div>
-            <div class="RightMenuEven">
-                <a class="RightMenuLinks" href=#Avaliaçao>Crítica</a>
+            <div class="BottomMenuEven">
+                <a class="BottomMenuLinks" href=#Avaliação>Crítica</a>
             </div>
-            <div class="RightMenuOdd">
-                <a class="RightMenuLinks" href=#TrilhaSonora>Trilha Sonora</a>
+            <div class="BottomMenuOdd">
+                <a class="BottomMenuLinks" href=#TrilhaSonora>Trilha Sonora</a>
             </div>
-            <div class="RightMenuEven">
-                <a class="RightMenuLinks" href=#Curiosidades>Curiosidades</a>
+            <div class="BottomMenuEven">
+                <a class="BottomMenuLinks" href=#Curiosidades>Curiosidades</a>
             </div>
     </div>
-    </div>     
-    </body>
+    </div>
+
+    <!-- Corpo do Site -->
+    <!-- Síntese -->
+    <div class="TitleDiv">
+    <h1 class="Title" id="Síntese" align="center" style="border: 0.5px; border-style: double; border-color: rgba(255, 0, 0, 0.3); border-left: 0px; border-right: 0px;">Síntese</h1>
+    </div>
+    <div class="ContentDiv">
+    </div>
+
+    <!-- Episódios -->
+     <div class="TitleDiv">
+    <h1 class="Title" id="Episódios" align="center" style="border: 0.5px; border-style: double; border-color: rgba(255, 0, 0, 0.3); border-left: 0px; border-right: 0px;">Episódios</h1>
+    </div>
+    <div class="ContentDiv">
+    </div>
+
+    <!-- Crítica -->
+     <div class="TitleDiv">
+    <h1 class="Title" id="#Avaliação" align="center" style="border: 0.5px; border-style: double; border-color: rgba(255, 0, 0, 0.3); border-left: 0px; border-right: 0px;">Crítica</h1>
+    </div>
+    <div class="ContentDiv">
+    </div>
+
+    <!-- Trilha Sonora -->
+     <div class="TitleDiv">
+    <h1 class="Title" id="TrilhaSonora" align="center" style="border: 0.5px; border-style: double; border-color: rgba(255, 0, 0, 0.3); border-left: 0px; border-right: 0px;">Trilha Sonora</h1>
+    </div>
+    <div class="ContentDiv">
+    </div>
+
+    <!-- Episódios -->
+     <div class="TitleDiv">
+    <h1 class="Title" id="Curiosidades" align="center" style="border: 0.5px; border-style: double; border-color: rgba(255, 0, 0, 0.3); border-left: 0px; border-right: 0px;">Curiosidades</h1>
+    </div>
+    <div class="ContentDiv">
+    </div>
+</body>
 </html>
