@@ -4,9 +4,14 @@
         <meta charset="UTF-8">
         <title></title>
         <link rel="icon" type="image" href="" sizes="">
+        
+        <!--Importar a fonte BENGUIAT SERIF-->
+        <link href="https://fonts.cdnfonts.com/css/benguiat-bk-bt" rel="stylesheet">
 
         <style>
-
+            /*Importar a fonte BENGUIAT SERIF*/
+             @import url('https://fonts.cdnfonts.com/css/benguiat-bk-bt');
+            
             .MenuBar{
                 display: flex;
                 width: 100%;
@@ -51,10 +56,46 @@
                 background-color: rgb(221, 25, 28);
             }
 
-            a{
-                color: rgb(255, 255, 255);
+            .RightMenuLinks{
                 text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-family: 'Benguiat Bk BT', sans-serif;   
+                -webkit-text-stroke: 1px rgba(255,0,0,0);
+                font-weight: bold;
             }
+
+            body {
+            background: rgb(0,0,0);
+
+            color: rgba(255, 255, 255, 0);
+            font-family: 'Benguiat Bk BT', sans-serif;   
+            -webkit-text-stroke: 1px rgba(255,0,0,1);                               
+            }
+
+            .Title{
+            color: rgba(255, 255, 255, 0);
+            font-family: 'Benguiat Bk BT', sans-serif;   
+            -webkit-text-stroke: 1px rgba(255,0,0,1);
+            }
+
+            .TitleWhite{
+            color: rgba(255, 255, 255, 0);
+            font-family: 'Benguiat Bk BT', sans-serif;   
+            -webkit-text-stroke: 1px rgb(255, 255, 255);
+            }
+
+            .Text{
+            color: rgb(255, 255, 255);
+            font-family: 'Benguiat Bk BT', sans-serif;   
+            -webkit-text-stroke: 1px rgba(255,0,0,0);
+            }
+
+            .TextRed{
+            color: rgba(255,0,0,1);
+            font-family: 'Benguiat Bk BT', sans-serif;   
+            -webkit-text-stroke: 1px rgba(255,0,0,0);
+            }
+
         </style>
 
     </head>
@@ -69,22 +110,22 @@
 
     <div class="RightMenu" id="MedioMenu" name="MedioMenu">
             <div class="RightMenuOdd">
-                <a href="index.html">Página Incial</a>
+                <a class="RightMenuLinks" href="index.html">Página Incial</a>
             </div>
             <div class="RightMenuEven">
-                <a href=#Sintese>Síntese</a>
+                <a class="RightMenuLinks" href=#Sintese>Síntese</a>
             </div>
             <div class="RightMenuOdd">
-                <a href=#Episodios>Episodios</a>
+                <a class="RightMenuLinks" href=#Episodios>Episodios</a>
             </div>
             <div class="RightMenuEven">
-                <a href=#Avaliaçao>Crítica</a>
+                <a class="RightMenuLinks" href=#Avaliaçao>Crítica</a>
             </div>
             <div class="RightMenuOdd">
-                <a href=#TrilhaSonora>Trilha Sonora</a>
+                <a class="RightMenuLinks" href=#TrilhaSonora>Trilha Sonora</a>
             </div>
             <div class="RightMenuEven">
-                <a href=#Curiosidades>Curiosidades</a>
+                <a class="RightMenuLinks" href=#Curiosidades>Curiosidades</a>
             </div>
     </div>
     </div>     
